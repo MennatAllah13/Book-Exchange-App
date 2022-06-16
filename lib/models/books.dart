@@ -1,24 +1,21 @@
-import 'users.dart';
+import 'package:flutter/material.dart';
 
 class Book {
-  String title;
+  String? pic;
+  String name;
   String author;
   String genre;
   String description;
-  String? publishingDate;
-  User offering;
-  String isbn;
   String language;
 
-  Book(
-      {required this.title,
-      required this.author,
-      required this.description,
-      required this.genre,
-      required this.offering,
-      this.publishingDate,
-      required this.isbn,
-      required this.language});
+  Book({
+    this.pic,
+    required this.name,
+    required this.author,
+    required this.description,
+    required this.genre,
+    required this.language,
+  });
 }
 
 List<Book> books = [];
